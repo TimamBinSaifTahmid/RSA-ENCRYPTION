@@ -1,0 +1,17 @@
+1.At First Take two prime numbers (p) & (q) as inputs.
+
+2.Then N=P*Q
+
+3.H(N)=(P-1)*(Q-1)
+
+4.Now pick a variable 'e' which range is 1<e<H(N)
+
+5.Then Pick Co-prime of e , H(N) and N .
+
+6.We will get a number from the process "5"
+
+7.At last we have to solve d= Inverse of (e mod H(N))
+
+8.From the process 7 we will get the Number
+
+9.So (n,e)is the encryption key and (n,d)is the decryption key
