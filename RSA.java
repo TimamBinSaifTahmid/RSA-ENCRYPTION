@@ -49,7 +49,7 @@ public class RSA {
      int i;
      for(i=0;i<ch.length();i++){
          ch5=ch.charAt(i);
-         if(ch5=='\0'){System.out.println("nb");break;}
+         if(ch5=='\0'){break;}
      long a=(long) Math.pow(ch5-64, e);
      a=(a%n)+64;
       ch4=(char)a;
