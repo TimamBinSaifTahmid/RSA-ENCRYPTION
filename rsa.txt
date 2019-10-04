@@ -2,16 +2,16 @@
 
 2.Then N=P*Q
 
-3.H(N)=(P-1)*(Q-1)
+3.f=(P-1)*(Q-1)
 
 4.Now pick a variable 'e' which range is 1<e<H(N)
 
-5.Then Pick Co-prime of e , H(N) and N .
+5.Then Pick e which is Co-prime with f and N .
 
-6.We will get a number from the process "5"
+6.We will get a number from the process e
 
-7.At last we have to solve d= Inverse of (e mod H(N))
+7.At last we have to solve d= Inverse of (e mod f)
 
-8.From the process 7 we will get the Number
+8.From the process 7 we will get the Number d
 
 9.So (n,e)is the encryption key and (n,d)is the decryption key
