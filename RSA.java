@@ -1,6 +1,6 @@
 
 package Rsa;
-
+import java.util.Scanner;
 public class RSA {
  public int   num1,num2,n,e=0,d;
  public String ch;
