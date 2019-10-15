@@ -1,15 +1,13 @@
 
 package Rsa;
-import java.util.Scanner;
+
 public class RSA {
  public int   num1,num2,n,e=0,d;
- public String ch;
  public char ch5,ch4;
  
- RSA(int num1, int num2, String ch ){
+ RSA(int num1, int num2 ){
    this.num1 = num1;
    this.num2 = num2;
-   this.ch = ch;
  }
  
   void generate(){
@@ -44,25 +42,24 @@ public class RSA {
      }
  }
   
- void encripte(){
-     String ch1 = ch;
+ void encripte(String ch){
      int i;
      for(i=0;i<ch.length();i++){
          ch5=ch.charAt(i);
-         if(ch5=='\0'){break;}
+         if(ch5=='\0'){System.out.println("nb");break;}
      long a=(long) Math.pow(ch5-64, e);
      a=(a%n)+64;
       ch4=(char)a;
-         System.out.print(ch4);
+         System.out.print(ch4);   
      }
+     System.out.print("\n");
  }
  
- void decripte(){
-     String ch1 = ch;
+ void decripte(String str){
      int i;
-     for(i=0;i<ch.length();i++){
-         ch5=ch.charAt(i);
-         if(ch5=='\0'){break;}
+     for(i=0;i<str.length();i++){
+         ch5=str.charAt(i);
+         if(ch5=='\0'){System.out.println("nb");break;}
      long a=(long) Math.pow(ch5-64, d);
      a=(a%n)+64;
       ch4=(char)a;
@@ -70,22 +67,4 @@ public class RSA {
      }
  }
 
-}
-
-public class RsaMain {
-     public static void main(String[] args) {
-         int a,b;
-         String ch;
-        
-        Scanner scan=new Scanner(System.in);
-        Scanner scan1=new Scanner(System.in);
-        a=scan.nextInt();
-        b=scan.nextInt();
-        ch=scan1.nextLine();
-        RSA rsa=new RSA(a, b, ch);
-        rsa.generate();
-        rsa.encripte();
-    
-    }
-    
 }
