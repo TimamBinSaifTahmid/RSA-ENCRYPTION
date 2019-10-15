@@ -4,7 +4,7 @@
 
 3.f=(P-1)*(Q-1)
 
-4.Now pick a variable 'e' which range is 1<e<H(N)
+4.Now pick a variable 'e' which range is 1<e<f.
 
 5.Then Pick e which is Co-prime with f and N .
 
