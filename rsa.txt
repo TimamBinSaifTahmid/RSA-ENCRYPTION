@@ -1,17 +1,26 @@
-1.At First Take two prime numbers (p) & (q) as inputs.
+1.At First we Take two prime numbers (p) & (q) as inputs.
 
 2.Then N=P*Q
 
 3.f=(P-1)*(Q-1)
 
-4.Now pick a variable 'e' which range is 1<e<f.
+4.Now pick a variable 'e' which range is 1<e<f
+    which is Co-prime with f and N .
 
-5.Then Pick e which is Co-prime with f and N .
+5.Then we take a string str to encript.
 
-6.We will get a number from the process e
+6.We  run a for loop to find Encripted message String E.
 
-7.At last we have to solve d= Inverse of (e mod f)
+7.E[i]=( ( positional value of str[i] ) ^ e ) mod N
 
-8.From the process 7 we will get the Number d
+8.Then we finally get encripted message E.
 
-9.So (n,e)is the encryption key and (n,d)is the decryption key
+9.Now decription key d= Inverse of (e mod f)
+
+10.Then we take a string str1 to decript.
+
+11.We  run a for loop to find Decripted message String D.
+
+12.D[i]=( ( positional value of str1[i] ) ^ d ) mod N
+
+13.Then we finally get decripted message D.
